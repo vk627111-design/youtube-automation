@@ -1,0 +1,33 @@
+{
+  "app_name": "YT Automation",
+  "app_version": "1.0.0",
+  "theme": "dark",
+  "language": "en",
+  "browser": {
+    "headless": false,
+    "timeout": 30000,
+    "executable_path": "",
+    "default_profile": "default"
+  },
+  "automation": {
+    "max_retries": 3,
+    "retry_delay_seconds": 30,
+    "screenshot_on_error": true,
+    "stop_on_error": false
+  },
+  "scheduler": {
+    "timezone": "Asia/Kolkata",
+    "default_schedule": "now",
+    "default_delay_minutes": 30
+  },
+  "video": {
+    "supported_formats": ["mp4", "mov", "mkv", "webm", "avi"],
+    "default_visibility": "private",
+    "default_folder": "data/videos"
+  },
+  "logging": {
+    "log_level": "INFO",
+    "log_file": "data/logs/app.log",
+    "log_retention_days": 30
+  }
+}
